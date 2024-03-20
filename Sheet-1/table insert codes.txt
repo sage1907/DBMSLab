@@ -1,0 +1,124 @@
+//depts table
+INSERT INTO depts (deptcode, deptname)
+VALUES
+    ('CE', 'Civil'),
+    ('CSE', 'Computer Science'),
+    ('ELE', 'Electrical'),
+    ('ETC', 'Electronics'),
+    ('IT', 'Information Technology'),
+    ('MEC', 'Mechanical');
+
+
+//students table
+INSERT INTO students (rollno, name, bdate, deptcode, hostel, perent_inc)
+VALUES
+    (92005101, 'Oishika Dutta', '1996-07-22', 'CSE', 4, 370000.0),
+    (92005102, 'Lasiewdor Rapsang', '1996-12-05', 'IT', 4, 450000.0),
+    (92005108, 'Debargha Ghosh', '1996-09-09', 'ELE', 5, 88630.0),
+    (92005201, 'Anish Banerjee', '1995-08-03', 'CSE', 7, 500000.0),
+    (92005205, 'Fardeen Hossain', '1995-08-10', 'CSE', 7, 420000.0),
+    (92005207, 'Ashish Kumar', '1996-11-12', 'IT', 2, 440000.0),
+    (92005208, 'Rahul Hansda', '1994-12-16', 'MEC', 6, 150000.0),
+    (92005215, 'Tanis Ahamed', '1995-09-15', 'ELE', 5, 250000.0),
+    (92005219, 'Sanmai Reddy', '1995-06-19', 'ETC', 5, 80000.0),
+    (92005220, 'Anudeep Mondal', '1992-11-24', 'CE', 6, 400000.0),
+    (92005222, 'Ayush Yadav', '1995-10-18', 'MEC', 2, 540000.0),
+    (92005224, 'Vinita Yadav', '1995-06-23', 'CSE', 3, 70000.0),
+    (92005225, 'Joyabrata Acharyya', '1993-07-09', 'ELE', 7, 100000.0),
+    (92005230, 'Tausif Islam', '1994-06-27', 'ETC', 7, 335000.0),
+    (92005232, 'Swarnila Roy', '1996-02-20', 'IT', 4, 320000.0),
+    (92005234, 'Tanmoy Paul', '1996-01-12', 'MEC', 7, 540000.0),
+    (92005242, 'Pushpender Singh', '1994-09-18', 'IT', 6, 240000.0),
+    (92005245, 'Sangita Basak', '1995-06-23', 'CE', 3, 300000.0),
+    (92005249, 'Devika Simlai', '1994-10-19', 'ETC', 4, 670000.0),
+    (92005259, 'Ankita Das', '1995-04-30', 'CE', 3, 90000.0),
+    (92005260, 'Sudip Datta', '1996-03-10', 'ETC', 6, 82000.0),
+    (92005264, 'Sayak Saha', '1995-01-24', 'CE', 6, 460000.0),
+    (92005267, 'Ishan Dasgupta', '1995-05-10', 'ELE', 6, 250000.0),
+    (92005281, 'Sourik Saha', '1994-03-26', 'CSE', 2, 84000.0),
+    (92005288, 'Vamsi Swarup', '1995-07-09', 'ELE', 7, 360000.0),
+    (92005290, 'Ustav Kumar', '1994-09-26', 'MEC', 5, 250000.0);
+
+
+//faculty table
+INSERT INTO faculty (fac_code, fac_name, fac_dept)
+VALUES
+    ('AB', 'Aritra Banyopadhyay', 'ELE'),
+    ('ARB', 'Aheli Roy Banerjee', 'MEC'),
+    ('dbp', 'Bipradeep Bera', 'ETC'),
+    ('MT', 'Manas Tripathi', 'CSE'),
+    ('nls', 'Pratik Srivastav', 'CE'),
+    ('PB', 'Prithijit Banerjee', 'IT'),
+    ('PM', 'Prayas Mazumder', 'CSE'),
+    ('RS', 'Raj Shah', 'CE'),
+    ('SS', 'Sankhya Samanta', 'ELE'),
+    ('YK', 'Yashwanth Kota', 'IT');
+
+
+//crs_offrd table
+INSERT INTO crs_offrd (crs_code, crs_name, crs_credits, crs_fac_cd)
+VALUES
+    ('CE201', 'Water Resources', 6.0, 'RS'),
+    ('CE204', 'Building Material', 8.2, 'nls'),
+    ('CS101', 'OS', 9.0, 'PM'),
+    ('CS201', 'Software Engg', 8.5, 'MT'),
+    ('CS207', 'DBMS', 8.0, 'PM'),
+    ('EC202', 'Control Signal', 6.3, 'dbp'),
+    ('EC203', 'Communication System', 5.6, 'dbp'),
+    ('EE101', 'Basic Electrical Engg', 7.5, 'SS'),
+    ('EE201', 'Induction Motor', 7.0, 'AB'),
+    ('IT106', 'Automata Theory', 8.0, 'YK'),
+    ('IT201', 'Digital Logic', 4.9, 'PB'),
+    ('ME208', 'Fluid Mechanics', 9.3, 'ARB'),
+    ('PH106', 'Quantum Physics', 8.8, 'nls');
+
+
+//crs_regd table
+INSERT INTO crs_regd (crs_rollno, crs_cd, marks)
+VALUES
+    (92005101, 'CS101', 89.00),
+    (92005101, 'CS201', 59.00),
+    (92005101, 'CS207', 76.00),
+    (92005102, 'IT106', 68.00),
+    (92005102, 'IT201', 100.00),
+    (92005201, 'CS101', 92.00),
+    (92005201, 'CS201', 56.00),
+    (92005201, 'CS207', 98.00),
+    (92005205, 'CS101', 88.00),
+    (92005205, 'CS201', 82.00),
+    (92005205, 'CS207', 90.00),
+    (92005207, 'IT106', 90.00),
+    (92005207, 'IT201', 85.00),
+    (92005208, 'ME208', 80.00),
+    (92005215, 'EE101', 74.00),
+    (92005215, 'EE201', 67.00),
+    (92005219, 'EC202', 88.00),
+    (92005219, 'EC203', 82.00),
+    (92005220, 'CE201', 78.00),
+    (92005220, 'CE204', 89.00),
+    (92005224, 'CS101', 100.00),
+    (92005224, 'CS201', 87.00),
+    (92005224, 'CS207', 95.00),
+    (92005225, 'EE101', 100.00),
+    (92005225, 'EE201', 87.00),
+    (92005232, 'IT106', 79.00),
+    (92005232, 'IT201', 90.00),
+    (92005234, 'ME208', 88.00),
+    (92005242, 'IT106', 80.00),
+    (92005242, 'IT201', 70.00),
+    (92005245, 'CE201', 95.00),
+    (92005245, 'CE204', 85.00),
+    (92005249, 'EC202', 80.00),
+    (92005249, 'EC203', 87.00),
+    (92005259, 'CE201', 45.00),
+    (92005259, 'CE204', 59.00),
+    (92005260, 'EC202', 77.00),
+    (92005260, 'EC203', 76.00),
+    (92005264, 'CE201', 75.00),
+    (92005264, 'CE204', 79.00),
+    (92005281, 'CS101', 87.00),
+    (92005281, 'CS201', 93.00),
+    (92005281, 'CS207', 96.00),
+    (92005288, 'EE101', 98.00),
+    (92005288, 'EE201', 90.00),
+    (92005290, 'ME208', 78.00);

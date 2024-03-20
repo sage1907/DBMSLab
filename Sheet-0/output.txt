@@ -1,0 +1,136 @@
+                ABC Company
+
+Current system date and time: 2023-08-03 11:44:51
+
+Region 1
+
+
+Salesman 1					Rs.15400/-
+
+
+
+Salesman 2					Rs.23150/-
+
+
+
+Salesman 3					Rs.15350/-
+
+
+
+Salesman 4					Rs.21250/-
+
+
+
+Salesman 5					Rs.20250/-
+
+
+
+Salesman 6					Rs.16350/-
+
+
+
+Total sale at Region 1		Rs.111750/-
+
+							 Page : 1/4
+
+=================================================================================================
+
+Region 2
+
+
+Salesman 1					Rs.13350/-
+
+
+
+Salesman 2					Rs.18000/-
+
+
+
+Salesman 3					Rs.33250/-
+
+
+
+Salesman 4					Rs.23000/-
+
+
+
+Salesman 5					Rs.19550/-
+
+
+
+Salesman 6					Rs.24350/-
+
+
+
+Total sale at Region 2		Rs.131500/-
+
+							 Page : 2/4
+
+=================================================================================================
+
+Region 3
+
+
+Salesman 1					Rs.14500/-
+
+
+
+Salesman 2					Rs.16250/-
+
+
+
+Salesman 3					Rs.10200/-
+
+
+
+Salesman 4					Rs.20900/-
+
+
+
+Salesman 5					Rs.14950/-
+
+
+
+Salesman 6					Rs.20150/-
+
+
+
+Total sale at Region 3		Rs.96950/-
+
+							 Page : 3/4
+
+=================================================================================================
+
+Region 4
+
+
+Salesman 1					Rs.18150/-
+
+
+
+Salesman 2					Rs.21550/-
+
+
+
+Salesman 3					Rs.31200/-
+
+
+
+Salesman 4					Rs.26050/-
+
+
+
+Salesman 5					Rs.22250/-
+
+
+
+Salesman 6					Rs.25950/-
+
+
+
+Total sale at Region 4		Rs.145150/-
+
+							 Page : 4/4
+
+=================================================================================================
+

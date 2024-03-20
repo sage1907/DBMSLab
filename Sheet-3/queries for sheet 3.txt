@@ -1,0 +1,58 @@
+//insertion for view
+INSERT INTO students (rollno, name, bdate, deptcode, hostel, perent_inc)
+VALUES
+    (92005104, 'Soumi De', '1995-09-30', 'CSE', 4, 330000.0),
+    (92005116, 'Bhawuk Kaushik', '1994-10-31', 'CSE', 5, 250000.0),
+    (92005132, 'Chandra Shekhar', '1996-11-11', 'CSE', 7, 108630.0),
+    (92005148, 'Arnab Nath', '1994-12-07', 'CSE', 6, 420000.0),
+    (92005190, 'Priya Samanta', '1995-03-19', 'CSE', 3, 240000.0),
+    (92005154, 'Samit Das', '1995-04-27', 'MEC', 5, 340000.0),
+    (92005147, 'Anik Banerjee', '1996-02-02', 'MEC', 6, 500000.0),
+    (92005250, 'Arko Ghosh', '1994-01-01', 'MEC', 7, 530000.0),
+    (92005262, 'Debasmita Banik', '1996-05-05', 'MEC', 3, 380000.0),
+    (92005227, 'Ishika Sarkar', '1995-06-02', 'MEC', 4, 333000.0);
+
+
+Queries:
+
+1.Create a view of all students in dept CSE.
+
+create view cse_stud as
+select *
+from students s
+where s.deptcode = 'CSE';
+
+2. Create a view named as cse_stud for ‘CSE’ dept students having attributes rollno, name, hostel.
+
+create or replace view cse_stud as
+select s.rollno, s.name, s.hostel
+from students s
+where deptcode = 'CSE';
+
+3. Insert a new student of CSE. Analyse the result.
+
+insert into cse_stud values (92005169, 'Anudeep', 7);
+
+4. Increment parental income by Rs. 5000 (HRA).
+
+update students
+set perent_inc = perent_inc + 5000
+where deptcode = 'CSE';
+
+
+//2nd Part
+1. Create another view of all students in dept Mechanical Engineering (department Name).
+The view will contain attributes namely Roll-No, Name, Department Name, Age.
+
+create or replace view me_stud as
+select s.rollno, s.name, s.deptcode, s.bdate
+from students s where s.deptcode = 'MEC';
+
+2. Insert a new student of Mechanical Engineering Department.
+
+insert into me_stud values (92005280, 'Triparno Mondal', 'MEC', '1995-08-18');
+
+3. Delete a student (for a given Name) of the same department
+
+delete from me_stud
+where rollno = 92005234;

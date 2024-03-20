@@ -1,0 +1,41 @@
+Pl/sql block to insert values into table cust_acct:
+
+begin
+    for i in 1..15 loop
+        -- generate a random 5-digit cust_id.
+        declare
+            v_cust_id number := trunc(dbms_random.value(10000, 99999));
+        begin
+            insert into cust_acct (cust_id, balance)
+            values (v_cust_id, round(dbms_random.value(100, 5000), 2));
+        end;
+    end loop;
+    commit;
+end;
+/
+select * from cust_acct
+/
+
+
+Pl/sql block to insert values into EMP table:
+
+declare
+    v_emp_id number;
+    v_salary number;
+begin
+    for i in 1..15 loop
+        v_emp_id := round(dbms_random.value(1000, 9999)); 
+        v_salary := round(dbms_random.value(30000, 80000), 2);       
+        insert into emp (emp_id, salary)
+        values (v_emp_id, v_salary);
+    end loop;
+    commit;
+    dbms_output.put_line('random values inserted into emp table.');
+exception
+    when others then
+        dbms_output.put_line('an error occurred while inserting random values.');
+end;
+/
+
+
+
